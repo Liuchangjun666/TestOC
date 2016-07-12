@@ -15,6 +15,7 @@
 		7FB5AD701D34D2B900B83562 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB5AD6E1D34D2B900B83562 /* LaunchScreen.storyboard */; };
 		7FB5AD7B1D34D2B900B83562 /* TestOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB5AD7A1D34D2B900B83562 /* TestOCTests.m */; };
 		7FB5AD861D34D2B900B83562 /* TestOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB5AD851D34D2B900B83562 /* TestOCUITests.m */; };
+		7FB5AD951D34DF6E00B83562 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB5AD941D34DF6E00B83562 /* Fraction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		7FB5AD811D34D2B900B83562 /* TestOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB5AD851D34D2B900B83562 /* TestOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOCUITests.m; sourceTree = "<group>"; };
 		7FB5AD871D34D2B900B83562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FB5AD931D34DF6E00B83562 /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		7FB5AD941D34DF6E00B83562 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				7FB5AD641D34D2B900B83562 /* AppDelegate.m */,
 				7FB5AD661D34D2B900B83562 /* ViewController.h */,
 				7FB5AD671D34D2B900B83562 /* ViewController.m */,
+				7FB5AD931D34DF6E00B83562 /* Fraction.h */,
+				7FB5AD941D34DF6E00B83562 /* Fraction.m */,
 				7FB5AD691D34D2B900B83562 /* Main.storyboard */,
 				7FB5AD6C1D34D2B900B83562 /* Assets.xcassets */,
 				7FB5AD6E1D34D2B900B83562 /* LaunchScreen.storyboard */,
@@ -207,6 +212,7 @@
 				TargetAttributes = {
 					7FB5AD5C1D34D2B900B83562 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 88W7X8A7HF;
 					};
 					7FB5AD751D34D2B900B83562 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -273,6 +279,7 @@
 				7FB5AD681D34D2B900B83562 /* ViewController.m in Sources */,
 				7FB5AD651D34D2B900B83562 /* AppDelegate.m in Sources */,
 				7FB5AD621D34D2B900B83562 /* main.m in Sources */,
+				7FB5AD951D34DF6E00B83562 /* Fraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TestOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ShaBro.TestOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +434,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TestOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ShaBro.TestOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
