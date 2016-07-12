@@ -10,6 +10,7 @@
 
 @interface Fraction ()
 
+
 @end
 
 @implementation Fraction
@@ -18,12 +19,12 @@
     int denominator;
 }
 
--(void) print
+-(void) show
 {
     NSLog(@"%i/%i",numerator,denominator);
 }
 
--(void) setNumber:(int)n
+-(void) setNumerator:(int)n
 {
     numerator = n;
 }
@@ -31,6 +32,16 @@
 -(void) setDenominator:(int)d
 {
     denominator = d;
+}
+
+-(int) getNumerator
+{
+    return numerator;
+}
+
+-(int) getDenominator
+{
+    return denominator;
 }
 
 @end
